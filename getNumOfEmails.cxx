@@ -8,7 +8,7 @@ string stripEmailAddr(string str) {
 	for(char c: str) {
 		if(c=='.') continue;//skip dot char
 		if(c=='@' || c=='+') break; //ignore after @ or +
-		ret += c;//otherwise concatenate char into return string
+		ret += c;//otherwise keep concatenating char into return string "ret"
 	}
 	return ret;
 }
